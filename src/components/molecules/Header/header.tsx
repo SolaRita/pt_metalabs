@@ -5,7 +5,7 @@ import PoligonLogo from "../../../../public/polygon_logo.svg";
 
 export default function Navbar() {
   return (
-    <header>
+    <header className="bg-background">
       <Link href={"/"}>
         <Image src={PoligonLogo} alt={"poligon_logo"} width={209} height={21} />
       </Link>
