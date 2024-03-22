@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 import Searcher from "@/components/atoms/searcher";
-import CtaButton from "@/components/atoms/button";
+import CtaButton, { AccentButton } from "@/components/atoms/button";
 
 import PoligonLogo from "../../../../public/polygon_logo.svg";
 import Avatar from "../../../../public/images/avatar.png";
@@ -83,7 +83,7 @@ export default function Navbar() {
           </ul>
         </nav>
         {cta.map((button, index) => (
-          <CtaButton key={index} {...button} />
+          <AccentButton href={"/"} key={index} {...button} />
         ))}
         <Link href={"/"}>
           <Image src={Avatar} alt={"avatar"} width={38} height={38} />
