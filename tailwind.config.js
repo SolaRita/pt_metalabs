@@ -18,6 +18,7 @@ module.exports = {
         background: {
           DEFAULT: "#0A0B14",
           300: "#211626",
+          200: "#1C141E",
         },
         accent: "#7855dc",
         body: "#333333",
