@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import Header from "@/components/molecules/Header/header";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import { inter } from "@/app/fonts";
 
 export const metadata: Metadata = {
   title: "Polygon",
@@ -18,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body
-        className={`${inter.className} antialiased flex flex-col min-h-screen`}
+        className={`${inter.className} bg-background p-8 antialiased flex flex-col min-h-screen`}
       >
         <Header />
         {children}
