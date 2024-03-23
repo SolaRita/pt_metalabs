@@ -11,7 +11,7 @@ const albums: Album[] = [
     src: album,
     user: {
       src: avatar,
-      name: "@John60",
+      name: "@johnti60",
     },
   },
   {
@@ -20,7 +20,7 @@ const albums: Album[] = [
     src: album,
     user: {
       src: avatar,
-      name: "@John60",
+      name: "@johnti60",
     },
   },
   {
@@ -29,7 +29,7 @@ const albums: Album[] = [
     src: album,
     user: {
       src: avatar,
-      name: "@John60",
+      name: "@johnti60",
     },
   },
   {
@@ -38,7 +38,7 @@ const albums: Album[] = [
     src: album,
     user: {
       src: avatar,
-      name: "@John60",
+      name: "@johnti60",
     },
   },
   {
@@ -47,7 +47,7 @@ const albums: Album[] = [
     src: album,
     user: {
       src: avatar,
-      name: "@John60",
+      name: "@johnti60",
     },
   },
 ];
