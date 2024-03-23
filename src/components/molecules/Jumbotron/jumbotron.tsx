@@ -20,7 +20,7 @@ const JumboData: JumbotronData = {
 export default function Jumbotron() {
   const { title, image, alt } = JumboData;
   return (
-    <section className="flex justify-between bg-gradient-to-r from-accent to-cyan  rounded-lg h-2/6">
+    <section className="flex justify-between bg-gradient-to-r from-accent to-cyan  rounded-lg h-2/6 mb-8">
       <div className="relative z-10 w-1/4 m-8">
         <h1
           className={`${raleway.className} text-6xl font-bold tracking-tighter inline-block text-transparent bg-clip-text bg-gradient-to-r from-withe to-pink leading-tight mb-4`}
