@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body
-        className={`${inter.className} bg-background p-8 antialiased flex flex-col min-h-screen`}
+        className={`${inter.className} bg-background px-10 antialiased flex flex-col justify-center w-full max-w-[1440px]`}
       >
         <Header />
         {children}

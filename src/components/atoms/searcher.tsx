@@ -1,6 +1,6 @@
 export default function Searcher() {
   return (
-    <div className="relative w-1/2">
+    <div className="relative w-1/3">
       <input
         type="text"
         className="w-full text-sm text-white py-2 pl-10 pr-4 rounded-full bg-background-200 focus:outline-none focus:border-accent border-2 border-transparent transition-colors duration-300"
