@@ -18,6 +18,7 @@ export default function Card({ ...album }) {
     const newLikedState = !liked;
     setLiked(newLikedState);
     const updatedAlbum = { ...album, like: newLikedState };
+    /* Lógica para enviar el album con el nuevo estado */
   };
 
   return (
@@ -75,8 +76,8 @@ export default function Card({ ...album }) {
           </Link>
           <FontAwesomeIcon
             icon={faHeart}
-            className={`text-grey w-5 cursor-pointer ${
-              liked ? "text-accent" : ""
+            className={` w-5 cursor-pointer ${
+              liked ? "text-accent" : "text-grey"
             }`}
             onClick={toggleLike}
             style={{
