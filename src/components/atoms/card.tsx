@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Card({ ...album }) {
   const { artist, user, src } = album;
   return (
-    <div className="bg-background-300 bg-opacity-25 rounded-2xl w-full">
+    <div className="bg-background-300 rounded-2xl w-full">
       <Image
         src={src}
         alt={artist}
@@ -12,6 +12,7 @@ export default function Card({ ...album }) {
         height={193}
         priority={false}
         className="pb-4"
+        style={{ opacity: "90%" }}
       />
       <div className="mx-5 mb-9">
         <h4 className={`${raleway.className} text-xl text-white mb-1`}>

@@ -4,12 +4,11 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 import Searcher from "@/components/atoms/searcher";
-import CtaButton, { AccentButton } from "@/components/atoms/button";
+import { AccentButton } from "@/components/atoms/button";
 
 import { interSemiBold } from "@/app/fonts";
 import PoligonLogo from "../../../../public/polygon_logo.svg";
 import Avatar from "../../../../public/images/avatar.png";
-import House from "../../../../public/images/house.svg";
 
 interface NavLink {
   name: string;
@@ -61,7 +60,7 @@ export default function Navbar() {
               return (
                 <li key={link.name} className="flex">
                   <Link
-                    className={`flex gap-2 px-8 py-2 rounded-full items-end ${
+                    className={`flex gap-2 px-4 py-2 rounded-full items-end ${
                       pathname === link.href ? "bg-accent bg-opacity-50" : ""
                     }`}
                     href={link.href}

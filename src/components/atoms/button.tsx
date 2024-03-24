@@ -8,7 +8,7 @@ interface buttonData {
 
 export default function Button({ name, href }: buttonData) {
   return (
-    <Link className="inline-block px-8 py-2 rounded-full items-end" href={href}>
+    <Link className="inline-block px-7 py-2 rounded-full items-end" href={href}>
       <p className={`${interSemiBold.className}  text-sm text-white`}>{name}</p>
     </Link>
   );

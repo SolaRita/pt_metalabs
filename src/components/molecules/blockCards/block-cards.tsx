@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import ListCards from "@/components/molecules/ListCards/list-cards";
-import { raleway } from "@/app/fonts";
+import { raleway, sansMedium } from "@/app/fonts";
 
 const blockData = {
   title: "Obras destacadas",
@@ -35,8 +35,10 @@ export default function BlockCards() {
           {links.map((link) => {
             return (
               <li>
-                <Link href={link.href} className="text-white text-sm">
-                  {link.name}
+                <Link href={link.href}>
+                  <p className={`${sansMedium.className} text-sm text-white`}>
+                    {link.name}
+                  </p>
                 </Link>
               </li>
             );
