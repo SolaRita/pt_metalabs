@@ -5,6 +5,7 @@ export interface Album {
   src: StaticImageData;
   user: User;
   id: number;
+  like: boolean;
 }
 
 interface User {

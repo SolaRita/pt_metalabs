@@ -1,17 +1,24 @@
 "use client";
-import { raleway } from "@/app/fonts";
+import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCartShopping,
   faHandshake,
   faHeart,
 } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
-import React, { useState } from "react";
+import Link from "next/link";
 
 export default function Card({ ...album }) {
-  const { artist, user, src } = album;
+  let { id, artist, user, src, like } = album;
   const [showIcons, setShowIcons] = useState(false);
+  const [liked, setLiked] = useState(like);
+
+  const toggleLike = () => {
+    const newLikedState = !liked;
+    setLiked(newLikedState);
+    const updatedAlbum = { ...album, like: newLikedState };
+  };
 
   return (
     <>
@@ -20,7 +27,7 @@ export default function Card({ ...album }) {
         onMouseEnter={() => setShowIcons(true)}
         onMouseLeave={() => setShowIcons(false)}
       >
-        <div className=" bg-background-300 rounded-2xl block overflow-hidden">
+        <div className="bg-background-300 rounded-2xl block overflow-hidden">
           <Image
             src={src}
             alt={artist}
@@ -31,9 +38,7 @@ export default function Card({ ...album }) {
             style={{ opacity: "90%" }}
           />
           <div className="mx-5 mb-9">
-            <h4 className={`${raleway.className} text-xl text-white mb-1`}>
-              {artist}
-            </h4>
+            <h4 className="text-xl text-white mb-1">{artist}</h4>
             <div className="flex gap-1">
               <Image
                 src={user.src}
@@ -52,12 +57,34 @@ export default function Card({ ...album }) {
           }`}
           style={{ top: "95%" }}
         >
-          <FontAwesomeIcon icon={faHandshake} className="text-gray-400 w-5" />
+          <Link
+            href="#"
+            onClick={() => {
+              /* Lógica para el enlace del acuerdo */
+            }}
+          >
+            <FontAwesomeIcon icon={faHandshake} className="text-grey w-5" />
+          </Link>
+          <Link
+            href="#"
+            onClick={() => {
+              /* Lógica para el enlace del carrito */
+            }}
+          >
+            <FontAwesomeIcon icon={faCartShopping} className="text-grey w-5" />
+          </Link>
           <FontAwesomeIcon
-            icon={faCartShopping}
-            className="text-gray-400 w-5"
+            icon={faHeart}
+            className={`text-grey w-5 cursor-pointer ${
+              liked ? "text-accent" : ""
+            }`}
+            onClick={toggleLike}
+            style={{
+              fill: liked ? "text-grey" : "none",
+              stroke: "text-grey",
+              strokeWidth: "2",
+            }}
           />
-          <FontAwesomeIcon icon={faHeart} className="text-gray-400 w-5" />
         </div>
       </div>
     </>

@@ -13,6 +13,7 @@ const albums: Album[] = [
       src: avatar,
       name: "@johnti60",
     },
+    like: false,
   },
   {
     id: 2,
@@ -22,6 +23,7 @@ const albums: Album[] = [
       src: avatar,
       name: "@johnti60",
     },
+    like: false,
   },
   {
     id: 3,
@@ -31,6 +33,7 @@ const albums: Album[] = [
       src: avatar,
       name: "@johnti60",
     },
+    like: false,
   },
   {
     id: 4,
@@ -40,6 +43,7 @@ const albums: Album[] = [
       src: avatar,
       name: "@johnti60",
     },
+    like: false,
   },
   {
     id: 5,
@@ -49,6 +53,7 @@ const albums: Album[] = [
       src: avatar,
       name: "@johnti60",
     },
+    like: false,
   },
 ];
 
