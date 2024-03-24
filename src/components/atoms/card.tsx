@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Card({ ...album }) {
   const { artist, user, src } = album;
   return (
-    <div className="bg-background-300 rounded-2xl w-full">
+    <div className="bg-background-300 rounded-2xl w-full overflow-hidden block">
       <Image
         src={src}
         alt={artist}

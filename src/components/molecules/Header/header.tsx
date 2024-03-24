@@ -39,7 +39,7 @@ const cta = [
     name: "Subir Obra",
   },
 ];
-export default function Navbar() {
+export default function Header() {
   const pathname = usePathname();
   return (
     <header className="bg-background flex justify-between items-center p-5">
@@ -69,8 +69,8 @@ export default function Navbar() {
                       <Image
                         src={`/icons/${link.icon}.svg`}
                         alt={link.name}
-                        width={45}
-                        height={45}
+                        width={40}
+                        height={40}
                         className="md:w-5"
                         priority={false}
                       />
