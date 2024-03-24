@@ -10,6 +10,8 @@ import { Button } from "@/app/intefaces/button";
 import { NavLink } from "@/app/intefaces/navLink";
 
 import { interSemiBold } from "@/app/fonts";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
 import PoligonLogo from "../../../../public/polygon_logo.svg";
 import Avatar from "../../../../public/images/avatar.png";
 
@@ -17,17 +19,15 @@ const navbarLinks: NavLink[] = [
   {
     name: "Home",
     href: "/",
-    icon: "house",
+    icon: faHome,
   },
   {
     name: "Descubrir",
     href: "/discover",
-    icon: "",
   },
   {
     name: "Favoritos",
     href: "/favourites",
-    icon: "",
   },
 ];
 
@@ -62,13 +62,10 @@ export default function Header() {
                     href={link.href}
                   >
                     {link.icon && (
-                      <Image
-                        src={`/icons/${link.icon}.svg`}
-                        alt={link.name}
-                        width={40}
-                        height={40}
-                        className="md:w-5"
-                        priority={false}
+                      <FontAwesomeIcon
+                        icon={link.icon}
+                        size="lg"
+                        className="text-white w-4"
                       />
                     )}
                     <p
