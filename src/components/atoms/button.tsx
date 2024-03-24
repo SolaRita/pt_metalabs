@@ -1,3 +1,4 @@
+import { interSemiBold } from "@/app/fonts";
 import Link from "next/link";
 
 interface buttonData {
@@ -7,11 +8,8 @@ interface buttonData {
 
 export default function Button({ name, href }: buttonData) {
   return (
-    <Link
-      className="inline-block px-6 py-2 rounded-full text-sm text-white"
-      href={href}
-    >
-      {name}
+    <Link className="inline-block px-8 py-2 rounded-full items-end" href={href}>
+      <p className={`${interSemiBold.className}  text-sm text-white`}>{name}</p>
     </Link>
   );
 }

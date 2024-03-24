@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Card({ ...album }) {
   const { artist, user, src } = album;
   return (
-    <div className="bg-background-300 bg-opacity-25 rounded-md w-full">
+    <div className="bg-background-300 bg-opacity-25 rounded-2xl w-full">
       <Image
         src={src}
         alt={artist}
@@ -14,9 +14,7 @@ export default function Card({ ...album }) {
         className="pb-4"
       />
       <div className="mx-5 mb-9">
-        <h4
-          className={`${raleway.className} text-xl text-white font-bold mb-1`}
-        >
+        <h4 className={`${raleway.className} text-xl text-white mb-1`}>
           {artist}
         </h4>
         <div className="flex gap-1">
@@ -27,7 +25,7 @@ export default function Card({ ...album }) {
             height={16}
             style={{ objectFit: "contain" }}
           />
-          <p className="text-white text-sm">{user.name}</p>
+          <p className="text-white text-xs text-opacity-65">{user.name}</p>
         </div>
       </div>
     </div>

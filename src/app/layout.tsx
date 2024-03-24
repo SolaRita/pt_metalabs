@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import Header from "@/components/molecules/Header/header";
 import "./globals.css";
-import { inter } from "@/app/fonts";
+import { sansRegular } from "./fonts";
+import Header from "@/components/molecules/Header/header";
 
 export const metadata: Metadata = {
   title: "Polygon",
@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body
-        className={`${inter.className} bg-background px-10 antialiased flex flex-col justify-center w-full max-w-[1440px]`}
+        className={`${sansRegular.className} bg-background px-10 antialiased flex flex-col justify-center w-full max-w-[1440px]`}
       >
         <Header />
         {children}

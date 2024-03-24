@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import Searcher from "@/components/atoms/searcher";
 import CtaButton, { AccentButton } from "@/components/atoms/button";
 
+import { interSemiBold } from "@/app/fonts";
 import PoligonLogo from "../../../../public/polygon_logo.svg";
 import Avatar from "../../../../public/images/avatar.png";
 import House from "../../../../public/images/house.svg";
@@ -60,7 +61,7 @@ export default function Navbar() {
               return (
                 <li key={link.name} className="flex">
                   <Link
-                    className={`flex gap-2 px-4 py-2 rounded-full text-sm text-white ${
+                    className={`flex gap-2 px-8 py-2 rounded-full items-end ${
                       pathname === link.href ? "bg-accent bg-opacity-50" : ""
                     }`}
                     href={link.href}
@@ -75,7 +76,11 @@ export default function Navbar() {
                         priority={false}
                       />
                     )}
-                    {link.name}
+                    <p
+                      className={`${interSemiBold.className}  text-sm text-white place-self-end`}
+                    >
+                      {link.name}
+                    </p>
                   </Link>
                 </li>
               );
