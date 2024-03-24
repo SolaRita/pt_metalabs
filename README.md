@@ -1,33 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# MetLabs Frontend Technical Test
 
-## Getting Started
+Este proyecto es una prueba técnica para el puesto de Frontend en MetLabs, realizada por Rita Solà.
 
-First, run the development server:
+## Tecnologías Utilizadas
+
+- **Next.js**: Un framework de React para aplicaciones web.
+- **Font Awesome**: Librería de iconos para interfaces de usuario.
+
+## Inicialización del Proyecto
+
+Antes de comenzar, asegúrate de instalar las dependencias del proyecto:
+
+```bash
+npm install
+# o
+yarn install
+# o cualquier otro gestor de paquetes que prefieras
+```
+
+Para levantar el servidor
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# or any other package manager you prefer
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Esto iniciará el servidor de desarrollo de Next.js. Luego, abre http://localhost:3000 en tu navegador para ver la aplicación.
 
 ## Deploy on Vercel
 
