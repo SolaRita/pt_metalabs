@@ -19,6 +19,7 @@ module.exports = {
           DEFAULT: "#0A0B14",
           300: "#211626",
           200: "#1C141E",
+          100: "#322638",
         },
         accent: {
           DEFAULT: "#7855dc",
