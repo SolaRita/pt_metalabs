@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body
-        className={`${sansRegular.className} bg-background px-10 antialiased flex flex-col justify-center w-full max-w-[1440px]`}
+        className={`${sansRegular.className} bg-background mx-auto px-10 antialiased flex flex-col justify-center w-full max-w-[1440px]`}
       >
         <Header />
         {children}
