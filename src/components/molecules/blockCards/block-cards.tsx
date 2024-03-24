@@ -2,8 +2,9 @@ import Link from "next/link";
 
 import ListCards from "@/components/molecules/ListCards/list-cards";
 import { raleway, sansMedium } from "@/app/fonts";
+import { BlockData } from "@/app/intefaces/blockData";
 
-const blockData = {
+const blockData: BlockData = {
   title: "Obras destacadas",
   links: [
     {

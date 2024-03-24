@@ -1,18 +1,13 @@
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 
 import WomanLiseningMusic from "../../../../public/images/woman_lisening_music.png";
 import { raleway } from "@/app/fonts";
 
 import { AccentButton } from "@/components/atoms/button";
 import { WhiteBorderButton } from "@/components/atoms/button";
+import { Jumbotron } from "@/app/intefaces/jumbotron";
 
-interface JumbotronData {
-  title: string;
-  image: StaticImageData;
-  alt: string;
-}
-
-const JumboData: JumbotronData = {
+const JumboData: Jumbotron = {
   title: "Membresía Premium",
   image: WomanLiseningMusic,
   alt: "woman lisening music",

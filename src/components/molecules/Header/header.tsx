@@ -6,17 +6,14 @@ import { usePathname } from "next/navigation";
 import Searcher from "@/components/atoms/searcher";
 import { AccentButton } from "@/components/atoms/button";
 
+import { Button } from "@/app/intefaces/button";
+import { NavLink } from "@/app/intefaces/navLink";
+
 import { interSemiBold } from "@/app/fonts";
 import PoligonLogo from "../../../../public/polygon_logo.svg";
 import Avatar from "../../../../public/images/avatar.png";
 
-interface NavLink {
-  name: string;
-  href: string;
-  icon: string;
-}
-
-const navbarLinks = [
+const navbarLinks: NavLink[] = [
   {
     name: "Home",
     href: "/",
@@ -34,11 +31,10 @@ const navbarLinks = [
   },
 ];
 
-const cta = [
-  {
-    name: "Subir Obra",
-  },
-];
+const cta: Button = {
+  name: "Subir Obra",
+  href: "/",
+};
 export default function Header() {
   const pathname = usePathname();
   return (
@@ -86,9 +82,7 @@ export default function Header() {
             })}
           </ul>
         </nav>
-        {cta.map((button, index) => (
-          <AccentButton href={"/"} key={index} {...button} />
-        ))}
+        <AccentButton href={cta.href} name={cta.name} />
         <Link href={"/"}>
           <Image src={Avatar} alt={"avatar"} width={38} height={38} />
         </Link>
