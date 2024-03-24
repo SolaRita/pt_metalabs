@@ -36,7 +36,7 @@ export default function BlockCards() {
             return (
               <li>
                 <Link href={link.href}>
-                  <p className={`${sansMedium.className} text-sm text-white`}>
+                  <p className={`${sansMedium.className} text-sm text-grey`}>
                     {link.name}
                   </p>
                 </Link>
