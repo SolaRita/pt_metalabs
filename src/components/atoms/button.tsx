@@ -20,7 +20,7 @@ export function AccentButton({ name, href }: Button) {
 
 export function WhiteBorderButton({ name, href }: Button) {
   return (
-    <div className=" border inset-0 border-white inline-block rounded-full">
+    <div className="border inset-0 border-white inline-block rounded-full">
       <Button name={name} href={href} />
     </div>
   );

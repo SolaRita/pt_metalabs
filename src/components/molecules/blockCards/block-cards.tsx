@@ -1,6 +1,5 @@
 import Link from "next/link";
-
-import ListCards from "@/components/molecules/ListCards/list-cards";
+import ListCards from "@/components/molecules/blockCards/list-cards";
 import { raleway, sansMedium } from "@/app/fonts";
 import { BlockData } from "@/app/intefaces/blockData";
 
@@ -33,9 +32,9 @@ export default function BlockCards() {
           {title}
         </h2>
         <ul className="flex gap-6 ">
-          {links.map((link) => {
+          {links.map((link, index) => {
             return (
-              <li>
+              <li key={index}>
                 <Link href={link.href}>
                   <p className={`${sansMedium.className} text-sm text-grey`}>
                     {link.name}

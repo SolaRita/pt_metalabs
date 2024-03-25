@@ -52,9 +52,9 @@ export default function Header() {
       <div className="flex gap-8 items-center">
         <nav>
           <ul className="flex gap-4">
-            {navbarLinks.map((link) => {
+            {navbarLinks.map((link, index) => {
               return (
-                <li key={link.name} className="flex">
+                <li key={index} className="flex">
                   <Link
                     className={`flex gap-2 px-4 py-2 rounded-full items-end ${
                       pathname === link.href ? "bg-accent bg-opacity-50" : ""

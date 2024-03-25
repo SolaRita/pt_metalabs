@@ -63,7 +63,7 @@ export default function ListCards() {
       <ul className="grid grid-cols-auto md:grid-cols-3 lg:grid-cols-5 gap-9">
         {albums.map((album: Album) => {
           return (
-            <li>
+            <li key={album.id}>
               <Card {...album} />
             </li>
           );
