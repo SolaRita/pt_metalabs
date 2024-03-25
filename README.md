@@ -5,6 +5,7 @@ Este proyecto es una prueba técnica para el puesto de Frontend en MetLabs, real
 ## Tecnologías Utilizadas
 
 - **Next.js**: Un framework de React para aplicaciones web.
+- **Tailwind**: Un framework de CSS para aplicaciones web.
 - **Font Awesome**: Librería de iconos para interfaces de usuario.
 
 ## Inicialización del Proyecto
