@@ -1,6 +1,6 @@
-# MetLabs Frontend Technical Test
+# MetaLabs Frontend Technical Test
 
-Este proyecto es una prueba técnica para el puesto de Frontend en MetLabs, realizada por Rita Solà.
+Este proyecto es una prueba técnica para el puesto de Frontend en MetaLabs, realizada por Rita Solà.
 
 ## Tecnologías Utilizadas
 
